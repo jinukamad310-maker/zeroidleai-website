@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ZeroIdleAI builds AI lead management and workflow automation for US roofing contractors and home-service businesses. Respond faster, follow up consistently and book more jobs.">
+<meta name="theme-color" content="#08111f">
+<title>ZeroIdleAI | AI Lead Management for US Contractors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08111f;--panel:#101d30;--panel2:#12243a;--text:#f4f7fb;--muted:#a8b6c9;--blue:#5c9dff;--cyan:#6ce3e0;--line:rgba(255,255,255,.11);--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;gap:11px;align-items:center;font-family:Manrope,sans-serif;font-weight:800;font-size:20px;letter-spacing:-.7px}.mark{height:34px;width:34px;border-radius:11px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#071323;font-weight:900;font-size:17px}.brand span{color:var(--cyan)}.navlinks{display:flex;align-items:center;gap:30px;color:#c4cfdd;font-size:14px}.navlinks a:hover{color:var(--cyan)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:10px;background:linear-gradient(110deg,var(--blue),var(--cyan));color:#071323;font-weight:800;font-size:14px;border:0;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn.secondary{background:transparent;border:1px solid var(--line);color:var(--text)}.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:8px;padding:8px 11px;font-size:20px}
+.hero{padding:88px 0 82px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:560px;height:560px;right:-140px;top:-210px;background:radial-gradient(circle,rgba(61,139,255,.22),transparent 68%);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:58px;align-items:center;position:relative}.eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid rgba(108,227,224,.25);background:rgba(108,227,224,.07);color:var(--cyan);border-radius:30px;padding:7px 12px;font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase}.dot{height:7px;width:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.12;letter-spacing:-1.5px}h1{font-size:clamp(42px,5.5vw,68px);margin:22px 0 20px;max-width:700px}h1 em{font-style:normal;background:linear-gradient(100deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:18px;color:var(--muted);max-width:590px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.micro{color:#8192a8;font-size:12px;margin-top:18px}.visual{background:linear-gradient(145deg,rgba(21,42,67,.96),rgba(10,23,39,.96));border:1px solid rgba(138,183,255,.2);border-radius:22px;padding:22px;box-shadow:0 25px 90px rgba(0,0,0,.28);position:relative}.visual-top{display:flex;justify-content:space-between;align-items:center;color:#9eb0c7;font-size:12px;margin-bottom:18px}.live{color:var(--cyan);font-size:11px}.flowbox{background:rgba(255,255,255,.045);border:1px solid var(--line);padding:15px;border-radius:13px;display:flex;align-items:center;gap:13px;margin:10px 0}.flowicon{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:rgba(92,157,255,.15);color:#8dbaff;font-size:18px;flex-shrink:0}.flowbox strong{display:block;font-size:13px}.flowbox small{color:#91a2b8;font-size:11px}.arrow{text-align:center;color:var(--cyan);font-size:17px;line-height:1}.result{margin-top:16px;padding:15px;border-radius:13px;background:linear-gradient(110deg,rgba(92,157,255,.14),rgba(108,227,224,.1));border:1px solid rgba(108,227,224,.2);display:flex;justify-content:space-between;align-items:center}.result strong{font-size:13px}.result small{color:#9fb3c8}.result b{font-size:21px;color:var(--cyan)}
+.workflow-board{background:linear-gradient(145deg,rgba(21,42,67,.97),rgba(8,19,33,.98));border:1px solid rgba(138,183,255,.22);border-radius:22px;padding:20px;box-shadow:0 25px 90px rgba(0,0,0,.3);position:relative;overflow:hidden}
+.workflow-board:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 90% 0%,rgba(108,227,224,.10),transparent 38%);pointer-events:none}
+.wf-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:17px;position:relative}
+.wf-title{font-size:13px;font-weight:800;letter-spacing:.2px}.wf-sub{font-size:10px;color:#8fa4bd;margin-top:3px}
+.wf-live{font-size:9px;color:var(--cyan);border:1px solid rgba(108,227,224,.25);background:rgba(108,227,224,.08);border-radius:30px;padding:6px 9px;white-space:nowrap}
+.wf-trigger{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid rgba(92,157,255,.25);background:rgba(92,157,255,.09);border-radius:12px;position:relative}
+.wf-ico{width:34px;height:34px;flex-shrink:0;border-radius:10px;display:grid;place-items:center;background:rgba(92,157,255,.18);color:#a9cbff;font-size:16px}
+.wf-trigger strong,.wf-node strong{display:block;font-size:11px}.wf-trigger small,.wf-node small{display:block;font-size:9px;color:#91a5bd;margin-top:3px}
+.wf-pill{margin-left:auto;font-size:8px;color:#b9d4ff;background:rgba(92,157,255,.14);padding:5px 7px;border-radius:20px;white-space:nowrap}
+.wf-line{height:17px;width:1px;background:linear-gradient(var(--blue),var(--cyan));margin:auto;position:relative}
+.wf-line:after{content:"";position:absolute;bottom:0;left:-3px;width:6px;height:6px;border-right:1px solid var(--cyan);border-bottom:1px solid var(--cyan);transform:rotate(45deg)}
+.wf-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;position:relative}
+.wf-node{border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:11px;padding:11px;min-height:70px;display:flex;gap:9px;align-items:flex-start}
+.wf-node .wf-ico{width:29px;height:29px;font-size:13px;border-radius:8px}
+.wf-node small{line-height:1.35}
+.wf-branch{font-size:8px;color:#9eb4ce;text-align:center;margin:9px 0 5px;letter-spacing:.7px;text-transform:uppercase}
+.wf-outcomes{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.wf-outcome{padding:11px;border-radius:10px;border:1px solid rgba(108,227,224,.18);background:rgba(108,227,224,.055)}
+.wf-outcome strong{font-size:10px;display:block}.wf-outcome small{font-size:9px;color:#92a9bf;display:block;margin-top:3px}
+.wf-foot{margin-top:13px;border-top:1px solid var(--line);padding-top:12px;display:flex;justify-content:space-between;gap:8px;align-items:center;color:#9db0c6;font-size:9px}
+.wf-foot b{color:var(--cyan);font-weight:700}
+
+.workflow-demo{background:linear-gradient(145deg,#101f34,#091625);border:1px solid rgba(125,174,255,.23);border-radius:22px;padding:20px;box-shadow:0 28px 90px rgba(0,0,0,.34);position:relative;overflow:hidden}
+.workflow-demo:after{content:"";position:absolute;width:300px;height:300px;right:-140px;top:-180px;background:radial-gradient(circle,rgba(65,145,255,.18),transparent 68%);pointer-events:none}
+.demo-top{display:flex;justify-content:space-between;align-items:center;padding:0 2px 17px;border-bottom:1px solid var(--line);position:relative;z-index:1}.demo-top>div{display:grid;gap:4px}.demo-kicker{font-size:8px;letter-spacing:1.2px;color:var(--cyan);font-weight:800}.demo-top strong{font-family:Manrope;font-size:16px;letter-spacing:-.4px}
+.demo-status,.pulse-label{font-size:8px;letter-spacing:.7px;color:#78e3c1;border:1px solid rgba(120,227,193,.22);background:rgba(120,227,193,.07);padding:6px 8px;border-radius:20px;white-space:nowrap}.demo-status i,.pulse-label i,.demo-bottom i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#78e3c1;margin-right:5px;box-shadow:0 0 8px #78e3c1}
+.demo-body{display:grid;grid-template-columns:.92fr 1.08fr;gap:15px;padding-top:16px;position:relative;z-index:1}.demo-rail{display:flex;flex-direction:column;justify-content:center}.demo-node{display:flex;align-items:center;gap:9px;padding:9px 8px;border:1px solid transparent;border-radius:10px;opacity:.62;transition:all .28s ease;background:rgba(255,255,255,.018);cursor:pointer}.demo-node.active{opacity:1;border-color:rgba(108,227,224,.35);background:linear-gradient(100deg,rgba(92,157,255,.14),rgba(108,227,224,.07));box-shadow:0 0 22px rgba(92,157,255,.07)}
+.node-icon{width:29px;height:29px;border-radius:9px;display:grid;place-items:center;flex-shrink:0;color:#a9ccff;background:rgba(92,157,255,.14);font-size:13px}.demo-node.active .node-icon{color:#071323;background:linear-gradient(135deg,var(--blue),var(--cyan))}.demo-node b{font-size:10px;display:block}.demo-node small{font-size:8px;color:#91a5bd;display:block;margin-top:2px;line-height:1.35}.demo-node em{font-style:normal;font-size:8px;color:#71869f;margin-left:auto}.rail-line{height:12px;width:1px;background:rgba(115,158,207,.2);margin-left:22px}
+.demo-inspector{border:1px solid rgba(255,255,255,.09);background:rgba(4,12,22,.45);border-radius:14px;padding:12px;min-width:0}.inspector-head{display:flex;justify-content:space-between;align-items:center;font-size:8px;letter-spacing:1px;color:#94a9c2;margin-bottom:10px}.pulse-label{font-size:7px;padding:4px 6px}
+.activity-window{min-height:275px;position:relative}.activity-card{display:none;animation:slideIn .35s ease}.activity-card.show{display:block}@keyframes slideIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}.activity-label{font-size:8px;letter-spacing:.8px;color:var(--cyan);font-weight:800;margin:2px 0 12px}
+.mini-form{background:#11243a;border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:11px}.mini-form-head{display:flex;align-items:center;gap:8px;padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:8px}.mini-logo{height:25px;width:25px;border-radius:8px;display:grid;place-items:center;background:linear-gradient(135deg,#f2a85b,#f5d18b);color:#172033;font-weight:900;font-size:12px}.mini-form-head b{font-size:8px;display:block}.mini-form-head small{font-size:7px;color:#8fa4bd;display:block}.new-tag{margin-left:auto;color:#72e4c0;background:rgba(114,228,192,.1);border-radius:5px;padding:4px;font-size:7px}
+.field-row{display:flex;justify-content:space-between;gap:7px;padding:7px 2px;border-bottom:1px solid rgba(255,255,255,.055);font-size:9px}.field-row:last-child{border-bottom:0}.field-row span{color:#8da2bb}.field-row b{color:#e2ebf5;font-weight:600;text-align:right}.activity-note{font-size:9px;color:#91a5bd;line-height:1.5;margin:12px 2px 0}
+.tool-chain{display:flex;align-items:center;justify-content:space-between;gap:4px;padding:16px 8px;background:#11243a;border:1px solid var(--line);border-radius:9px}.tool-chain span{font-size:8px;color:#d4e1f0;background:rgba(255,255,255,.06);padding:7px 6px;border-radius:5px}.tool-chain b{font-size:11px;color:var(--cyan)}.tool-chain .tool-hot{background:rgba(108,227,224,.13);color:var(--cyan)}.log-lines{margin-top:12px;background:#0c1929;border-radius:8px;padding:7px 10px}.log-lines p{font-size:9px;color:#c5d3e2;margin:7px 0}.log-lines i{color:#70dfb6;font-style:normal;margin-right:7px}
+.ai-summary{display:flex;align-items:center;gap:9px;padding:12px;background:#12283d;border-radius:9px;margin-bottom:8px}.ai-orb{height:31px;width:31px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,#4c8eff,#68e1d9);color:#071323}.ai-summary b{display:block;font-size:10px}.ai-summary small{display:block;color:#8fa4bd;font-size:8px}.value-blue{color:#91bcff!important}.value-green{color:#74e2bb!important}
+.chat-window{background:#0e1c2d;border:1px solid var(--line);border-radius:10px;padding:10px}.chat-brand{font-size:9px;font-weight:700;color:#e5eef8;padding-bottom:7px;border-bottom:1px solid var(--line)}.chat-brand small{font-weight:400;color:#8fa4bd;margin-left:5px}.chat-bubble{font-size:8px;line-height:1.45;padding:8px 9px;border-radius:9px;background:#1a3049;color:#e4edf7;max-width:91%;margin-top:8px}.chat-bubble.customer{margin-left:auto;background:#15504c}
+.crm-table{border:1px solid var(--line);border-radius:9px;overflow:hidden}.crm-row{display:grid;grid-template-columns:1.05fr 1fr .8fr;gap:5px;padding:9px 7px;border-bottom:1px solid rgba(255,255,255,.06);font-size:8px;align-items:center}.crm-row:last-child{border:0}.crm-header{font-size:7px;letter-spacing:.5px;color:#8fa4bd;background:rgba(255,255,255,.04)}.crm-row b{font-size:8px}.crm-row em{font-style:normal;color:#6fe0bb;background:rgba(111,224,187,.09);padding:4px;border-radius:5px;text-align:center;font-size:7px}.crm-row .status-new{color:#e9c27b;background:rgba(233,194,123,.09)}.crm-row .status-booked{color:#8fbcff;background:rgba(143,188,255,.1)}
+.booking-card{display:flex;align-items:center;gap:10px;padding:15px 11px;border:1px solid rgba(108,227,224,.2);border-radius:10px;background:rgba(108,227,224,.06)}.calendar-icon{height:35px;width:35px;border-radius:10px;background:rgba(108,227,224,.13);display:grid;place-items:center;color:var(--cyan);font-size:17px}.booking-card b{font-size:10px;display:block}.booking-card small{font-size:8px;color:#92a8c0;display:block;margin-top:3px}.booking-card>span{margin-left:auto;color:#72e4bd;font-size:18px}.booking-success{font-size:9px;color:#72e4bd;margin-top:11px;padding:9px;background:rgba(114,228,192,.07);border-radius:7px}
+.demo-controls{display:flex;align-items:center;justify-content:center;gap:13px;margin-top:12px}.demo-controls button{width:25px;height:25px;border:1px solid var(--line);border-radius:7px;background:#13263d;color:#d8e7f6;cursor:pointer}.demo-controls button:hover{border-color:var(--cyan);color:var(--cyan)}.progress-dots{display:flex;gap:5px}.progress-dots span{height:4px;width:13px;border-radius:5px;background:#30445c;transition:.2s}.progress-dots span.current{width:24px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+.demo-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px;border-top:1px solid var(--line);padding-top:12px;font-size:8px;color:#8fa4bd}.demo-bottom>span:first-child{letter-spacing:.8px;white-space:nowrap}.demo-bottom b{color:#c8d8e9;font-size:8px;font-weight:600;text-align:center}.demo-bottom>span:last-child{white-space:nowrap;color:var(--cyan)}
+@media(max-width:560px){.workflow-demo{padding:14px}.demo-body{grid-template-columns:1fr;gap:12px}.demo-rail{display:grid;grid-template-columns:1fr 1fr;gap:5px}.rail-line{display:none}.demo-node{padding:8px 6px;gap:6px}.demo-node b{font-size:9px}.demo-node small{font-size:7px}.demo-node em{display:none}.demo-inspector{padding:10px}.activity-window{min-height:245px}.demo-bottom{flex-wrap:wrap}.demo-bottom b{order:3;width:100%;text-align:left}}
+
+
+
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;color:#9aabc0;font-size:13px}.trustrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.trustrow span{display:flex;align-items:center;gap:9px}.trustrow b{color:#e8f0fa;font-weight:600}
+section{padding:88px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 44px}.kicker{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.section-head h2{font-size:clamp(32px,4vw,46px);margin:13px 0}.section-head p{color:var(--muted);font-size:16px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(145deg,rgba(18,36,58,.95),rgba(12,25,42,.95));border:1px solid var(--line);border-radius:17px;padding:25px;min-height:220px}.cardicon{width:45px;height:45px;display:grid;place-items:center;border-radius:13px;background:rgba(92,157,255,.13);color:var(--cyan);font-size:21px;margin-bottom:22px}.card h3{font-size:19px;letter-spacing:-.5px;margin:0 0 10px}.card p{color:var(--muted);font-size:14px;margin:0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.split h2{font-size:clamp(32px,4vw,45px);margin:13px 0 18px}.split p{color:var(--muted)}.checks{list-style:none;padding:0;margin:25px 0}.checks li{margin:13px 0;color:#d7e1ed;display:flex;gap:11px}.checks li:before{content:"✓";color:var(--cyan);font-weight:900}.mock{background:linear-gradient(145deg,#12243a,#0b1727);border:1px solid var(--line);border-radius:20px;padding:24px}.mockhead{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:17px;margin-bottom:18px}.mockhead strong{font-size:14px}.tag{font-size:10px;padding:5px 8px;border-radius:20px;color:var(--cyan);background:rgba(108,227,224,.1)}.msg{max-width:88%;padding:13px 15px;border-radius:13px;background:#1a304b;color:#e7eff9;font-size:13px;margin:12px 0}.msg.right{margin-left:auto;background:#16434a}.msg small{display:block;color:#9cb0c6;font-size:10px;margin-bottom:5px}.mockfoot{border-top:1px solid var(--line);padding-top:15px;color:#8fa3ba;font-size:11px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:22px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.025)}.num{color:var(--cyan);font-family:Manrope;font-size:13px;font-weight:800}.step h3{font-size:17px;margin:13px 0 8px}.step p{font-size:13px;color:var(--muted);margin:0}
+.cta{padding:58px 30px;border:1px solid rgba(108,227,224,.22);border-radius:22px;text-align:center;background:radial-gradient(ellipse at 50% 0%,rgba(92,157,255,.18),transparent 65%),#101e31}.cta h2{font-size:clamp(30px,4vw,44px);margin:0 0 14px}.cta p{color:var(--muted);max-width:610px;margin:0 auto 25px}
+.aboutbox{display:flex;gap:22px;align-items:center;background:#101e31;border:1px solid var(--line);border-radius:17px;padding:25px}.avatar{width:66px;height:66px;border-radius:20px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#071323;font-family:Manrope;font-weight:900;font-size:22px;flex-shrink:0}.aboutbox h3{margin:0 0 5px;font-size:20px}.aboutbox p{margin:0;color:var(--muted);font-size:14px}
+.contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px}.contact h2{font-size:42px;margin:12px 0}.contact p{color:var(--muted)}.contact-details{margin-top:25px;display:grid;gap:13px;color:#dbe5f1;font-size:14px}.contact-details span{color:var(--cyan);margin-right:9px}.form{background:#101e31;border:1px solid var(--line);border-radius:18px;padding:25px}.form label{display:block;font-size:12px;color:#bdcada;margin:13px 0 6px}.form input,.form textarea,.form select{width:100%;padding:13px;border:1px solid var(--line);border-radius:9px;background:#0a1728;color:white;font:inherit;outline:none}.form input:focus,.form textarea:focus{border-color:var(--blue)}.form textarea{min-height:110px;resize:vertical}.form .btn{width:100%;margin-top:17px}.fineprint{font-size:11px;color:#8294aa;margin-top:12px}
+footer{border-top:1px solid var(--line);padding:25px 0;color:#899bb1;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:#eaf2fc}
+@media(max-width:850px){.hero-grid,.split,.contact{grid-template-columns:1fr}.hero-grid{gap:40px}.cards{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.navlinks{display:none;position:absolute;top:81px;left:0;right:0;background:#0b1727;padding:22px;z-index:5;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.nav>.btn{display:none}.split{gap:35px}}
+@media(max-width:560px){.wrap{width:min(100% - 30px,1160px)}.hero{padding:62px 0}.cards,.steps{grid-template-columns:1fr}.aboutbox{align-items:flex-start}.visual{padding:15px}section{padding:68px 0}.trustrow{display:grid;grid-template-columns:1fr 1fr}.contact h2{font-size:35px}}
+
+/* Final polish for US contractor audience and Calendly-ready booking area */
+.calendar-panel{min-height:330px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(145deg,#12243a,#0c192a);border:1px solid var(--line);border-radius:18px;padding:25px}
+.calendar-panel-head{display:flex;align-items:center;gap:13px}.calendar-symbol{width:47px;height:47px;display:grid;place-items:center;border-radius:13px;background:rgba(108,227,224,.1);color:var(--cyan);font-size:23px}
+.calendar-panel h3{font-size:23px;margin:5px 0 0;letter-spacing:-.7px}.calendar-panel p{font-size:14px;color:var(--muted);margin:19px 0}
+.calendar-placeholder{min-height:112px;border:1px dashed rgba(108,227,224,.32);border-radius:12px;background:rgba(108,227,224,.035);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:5px}
+.calendar-placeholder-icon{font-size:22px;color:var(--cyan)}.calendar-placeholder strong{font-size:13px}.calendar-placeholder span{font-size:11px;color:#8fa4bd}
+.demo-disclaimer{font-size:9px;color:#71869f;text-align:center;margin-top:8px}
+.demo-node{cursor:pointer}.demo-node:focus-visible,.demo-controls button:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+@media(prefers-reduced-motion:no-preference){.demo-node.active{animation:nodeGlow 2.2s ease-in-out infinite alternate}.demo-status i{animation:statusPulse 1.8s ease-in-out infinite}@keyframes nodeGlow{from{box-shadow:0 0 0 rgba(92,157,255,0)}to{box-shadow:0 0 18px rgba(92,157,255,.13)}}@keyframes statusPulse{50%{opacity:.45;box-shadow:0 0 2px #78e3c1}}}
+
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#home" aria-label="ZeroIdleAI home"><span class="mark">Z</span>ZeroIdle<span>AI</span></a>
+  <nav class="navlinks" id="navlinks"><a href="#services">Services</a><a href="#how">How it works</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <a class="btn" href="#contact">Schedule a discovery call</a>
+  <button class="menu" id="menu" aria-label="Open navigation">☰</button>
+</header>
+
+<main id="home">
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow"><span class="dot"></span> AI automation for US contractors</div>
+   <h1>Every lead deserves a <em>faster response.</em></h1>
+   <p class="lead">We help roofing contractors and other home-service businesses across the US capture new inquiries, respond faster, follow up consistently, and turn more opportunities into booked appointments.</p>
+   <div class="hero-actions"><a class="btn" href="#contact">Book a discovery call ↗</a><a class="btn secondary" href="#services">Explore services</a></div>
+   <div class="micro">Built for roofing · HVAC · Plumbing · Home-service teams</div>
+  </div>
+  <div class="workflow-demo" aria-label="Interactive ZeroIdleAI lead management workflow demo">
+   <div class="demo-top"><div><span class="demo-kicker">ZEROIDLEAI · INTERACTIVE WORKFLOW PREVIEW</span><strong>See a new lead move through the system</strong></div><span class="demo-status"><i></i> DEMO MODE</span></div>
+   <div class="demo-body">
+    <div class="demo-rail">
+     <div class="demo-node active" data-step="0" role="button" tabindex="0" aria-label="Show new website lead step"><span class="node-icon">↗</span><span><b>Website lead</b><small>ABC Roofing · Austin, TX</small></span><em>01</em></div><div class="rail-line"></div>
+     <div class="demo-node" data-step="1" role="button" tabindex="0" aria-label="Show n8n automation step"><span class="node-icon">⌁</span><span><b>n8n webhook</b><small>Data received · Workflow started</small></span><em>02</em></div><div class="rail-line"></div>
+     <div class="demo-node" data-step="2" role="button" tabindex="0" aria-label="Show AI lead qualification step"><span class="node-icon">✦</span><span><b>OpenAI qualification</b><small>Job type · Location · Timeline</small></span><em>03</em></div><div class="rail-line"></div>
+     <div class="demo-node" data-step="3" role="button" tabindex="0" aria-label="Show personalized SMS step"><span class="node-icon">▣</span><span><b>Personalized SMS</b><small>Customer contacted · Reply received</small></span><em>04</em></div><div class="rail-line"></div>
+     <div class="demo-node" data-step="4" role="button" tabindex="0" aria-label="Show CRM update step"><span class="node-icon">▤</span><span><b>CRM updated</b><small>Lead qualified · Team notified</small></span><em>05</em></div><div class="rail-line"></div>
+     <div class="demo-node" data-step="5" role="button" tabindex="0" aria-label="Show booking confirmation step"><span class="node-icon">▦</span><span><b>Booking confirmed</b><small>Inspection · Calendar synchronized</small></span><em>06</em></div>
+    </div>
+    <div class="demo-inspector">
+     <div class="inspector-head"><span>WORKFLOW ACTIVITY</span><span class="pulse-label"><i></i> AUTO-PLAYING</span></div>
+     <div class="activity-window">
+      <div class="activity-card show" data-panel="0"><div class="activity-label">01 / INCOMING REQUEST</div><div class="mini-form"><div class="mini-form-head"><span class="mini-logo">A</span><span><b>ABC ROOFING SOLUTIONS</b><small>New service request</small></span><span class="new-tag">NEW</span></div><div class="field-row"><span>Customer</span><b>John Miller</b></div><div class="field-row"><span>Service</span><b>Roof replacement</b></div><div class="field-row"><span>Location</span><b>Austin, Texas</b></div><div class="field-row"><span>Timeline</span><b>Within 2 weeks</b></div></div><p class="activity-note">A website form starts the automation as soon as a customer submits an inquiry.</p></div>
+      <div class="activity-card" data-panel="1"><div class="activity-label">02 / WORKFLOW TRIGGERED</div><div class="tool-chain"><span>FORM</span><b>→</b><span class="tool-hot">n8n WEBHOOK</span><b>→</b><span>DATA</span></div><div class="log-lines"><p><i>✓</i> New submission detected</p><p><i>✓</i> Customer details parsed</p><p><i>✓</i> Workflow execution started</p></div><p class="activity-note">n8n connects the apps and passes lead information to the next steps.</p></div>
+      <div class="activity-card" data-panel="2"><div class="activity-label">03 / AI UNDERSTANDS THE LEAD</div><div class="ai-summary"><div class="ai-orb">✦</div><div><b>AI Lead Summary</b><small>Structured customer context</small></div></div><div class="field-row"><span>Job type</span><b>Replacement</b></div><div class="field-row"><span>Urgency</span><b class="value-blue">Planned · 2 weeks</b></div><div class="field-row"><span>Suggested status</span><b class="value-green">Qualified</b></div><p class="activity-note">AI summarizes the customer’s request and prepares useful context for the team.</p></div>
+      <div class="activity-card" data-panel="3"><div class="activity-label">04 / CUSTOMER CONVERSATION</div><div class="chat-window"><div class="chat-brand">ABC Roofing <small>SMS · Example</small></div><div class="chat-bubble">Hi John! Thanks for contacting ABC Roofing. Is this for a full roof replacement or a repair?</div><div class="chat-bubble customer">A complete roof replacement.</div><div class="chat-bubble">Thanks! Would you like to schedule a roof inspection?</div></div><p class="activity-note">A personalized message helps move the conversation forward.</p></div>
+      <div class="activity-card" data-panel="4"><div class="activity-label">05 / CRM PIPELINE UPDATED</div><div class="crm-table"><div class="crm-row crm-header"><span>LEAD</span><span>SERVICE</span><span>STATUS</span></div><div class="crm-row"><b>John Miller</b><span>Replacement</span><em>Qualified</em></div><div class="crm-row"><b>Sarah Wilson</b><span>Roof repair</span><em class="status-new">New lead</em></div><div class="crm-row"><b>David Brown</b><span>Inspection</span><em class="status-booked">Booked</em></div></div><p class="activity-note">Lead details and statuses are synchronized so the team can see what needs attention.</p></div>
+      <div class="activity-card" data-panel="5"><div class="activity-label">06 / APPOINTMENT CONFIRMED</div><div class="booking-card"><div class="calendar-icon">▦</div><div><b>Roof inspection</b><small>Tuesday · 10:00 AM</small></div><span>✓</span></div><div class="booking-success">✓ &nbsp; Booking confirmation sent</div><p class="activity-note">The scheduling system updates the CRM and notifies the team.</p></div>
+     </div>
+     <div class="demo-controls"><button type="button" id="workflowPrev" aria-label="Previous workflow step">←</button><div class="progress-dots"><span class="current"></span><span></span><span></span><span></span><span></span><span></span></div><button type="button" id="workflowNext" aria-label="Next workflow step">→</button></div>
+    </div>
+   </div>
+   <div class="demo-bottom"><span><i></i> SAMPLE AUTOMATION</span><b id="workflowCaption">New lead captured · Website form received</b><span id="workflowCount">01 / 06</span></div><div class="demo-disclaimer">Illustrative example only. Workflow steps, tools and customer messages are tailored to each business.</div>
+  </div> </div>
+</section>
+
+<div class="trust"><div class="wrap trustrow"><span>✦ <b>Roofing & home-service</b> workflows</span><span>✦ <b>Missed-call</b> follow-up</span><span>✦ <b>AI lead</b> qualification</span><span>✦ <b>CRM & calendar</b> handoff</span></div></div>
+
+<section id="services">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">What we build</div><h2>Built around the way contractors win work.</h2><p>From the first call to the booked inspection, we connect your existing tools and automate repetitive tasks that can slow response times.</p></div>
+  <div class="cards">
+   <article class="card"><div class="cardicon">◉</div><h3>AI Lead Management</h3><p>Capture, organize, and qualify incoming leads, then route the relevant details to your team.</p></article>
+   <article class="card"><div class="cardicon">↗</div><h3>Missed-Call Follow-up</h3><p>Send a timely text after a missed call so potential customers know how to reach you.</p></article>
+   <article class="card"><div class="cardicon">✦</div><h3>AI Chat & Voice Agents</h3><p>Answer common questions, gather job details, and guide customers to the next step.</p></article>
+   <article class="card"><div class="cardicon">▤</div><h3>CRM & Pipeline Automation</h3><p>Move lead information between forms, inboxes, and CRM stages with fewer manual updates.</p></article>
+   <article class="card"><div class="cardicon">◷</div><h3>Estimate Follow-up</h3><p>Create consistent follow-up sequences for open estimates and pending customer decisions.</p></article>
+   <article class="card"><div class="cardicon">▣</div><h3>Appointment Booking</h3><p>Connect lead qualification with scheduling, confirmations and team notifications.</p></article>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap split">
+  <div><div class="kicker">Built around your workflow</div><h2>From the first inquiry to a booked appointment.</h2><p>When inquiries come in through calls, forms, and messages, important details can get scattered. A connected workflow helps your team see who needs a response and what should happen next.</p>
+   <ul class="checks"><li>Respond to new inquiries promptly</li><li>Collect the details your team needs</li><li>Keep lead records organized</li><li>Make follow-up more consistent</li><li>Give staff a clear handoff</li></ul>
+   <a class="btn" href="#contact">Discuss your process ↗</a>
+  </div>
+  <div class="mock">
+   <div class="mockhead"><strong>Sample customer conversation</strong><span class="tag">ILLUSTRATIVE DEMO</span></div>
+   <div class="msg"><small>Customer · 10:42 AM</small>Hi, I need someone to look at a roof leak.</div>
+   <div class="msg right"><small>Automated assistant · 10:42 AM</small>Thanks for reaching out. I can help get the right details to the team. What city is the property in?</div>
+   <div class="msg"><small>Customer · 10:43 AM</small>I'm in Tampa. It started leaking after the rain.</div>
+   <div class="msg right"><small>Automated assistant · 10:43 AM</small>Got it. Is this an active leak inside the home, or are you looking for an inspection? I'll pass this to the team.</div>
+   <div class="mockfoot">Example only. Actual message content, channels and integrations are configured for each business.</div>
+  </div>
+ </div>
+</section>
+
+<section id="how">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">A simple process</div><h2>From problem to practical automation.</h2><p>We start with the bottleneck in your business, then design a workflow around the way your team actually works.</p></div>
+  <div class="steps">
+   <div class="step"><div class="num">01 / DISCOVER</div><h3>Understand</h3><p>Review how leads arrive, how your team responds, and where work gets delayed.</p></div>
+   <div class="step"><div class="num">02 / DESIGN</div><h3>Map the workflow</h3><p>Agree on the steps, tools, handoffs, and customer experience before building.</p></div>
+   <div class="step"><div class="num">03 / BUILD</div><h3>Connect & test</h3><p>Set up the automation, then test realistic scenarios with your team.</p></div>
+   <div class="step"><div class="num">04 / IMPROVE</div><h3>Refine</h3><p>Review how it works in practice and make sensible improvements over time.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">About ZeroIdleAI</div><h2>Practical automation. Real business workflows.</h2><p>ZeroIdleAI designs AI-powered lead management and workflow systems for contractors and service businesses. Our goal is simple: help teams respond consistently, keep customer details organized, and make the next step clear.</p></div>
+  <div class="aboutbox"><div class="avatar">JK</div><div><h3>Jinendra Kamad <span style="color:var(--cyan);font-size:13px;font-weight:500">· Founder</span></h3><p>I build practical AI automation systems for growing businesses, focusing on lead management, customer communication, and workflow efficiency.</p></div></div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap contact">
+  <div><div class="kicker">Let’s connect</div><h2>Let’s make your lead process work harder.</h2><p>Book a free 30-minute discovery call to review your lead process and identify where practical automation could save your team time.</p>
+   <div class="contact-details">
+    <div><span>✉</span> jinukamad310@gmail.com</div>
+    <div><span>◉</span> WhatsApp: +91 81074 52339</div>
+    <div><span>↗</span> zeroidleai.com</div>
+   </div>
+  </div>
+  <div class="calendar-panel">
+   <div class="calendar-panel-head"><div class="calendar-symbol">▦</div><div><span class="kicker">SCHEDULE ONLINE</span><h3>Book a free discovery call</h3></div></div>
+   <p>Choose a convenient time for a 30-minute conversation about your lead process and where AI automation could help.</p>
+   <a class="btn" href="https://calendly.com/jinukamad310/30min" target="_blank" rel="noopener noreferrer">Book your call ↗</a>
+   <div class="fineprint">30 minutes · Online meeting · Free discovery call. Calendly shows available times in your local time zone.</div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap foot"><div><strong>ZeroIdleAI</strong> · Intelligent Automation. Smarter Businesses.</div><div>© <span id="year"></span> ZeroIdleAI. All rights reserved.</div></div></footer>
+<script>
+const menu=document.getElementById('menu'), nav=document.getElementById('navlinks');
+menu.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+const workflowNodes=[...document.querySelectorAll('.demo-node')];
+const workflowPanels=[...document.querySelectorAll('.activity-card')];
+const workflowDots=[...document.querySelectorAll('.progress-dots span')];
+const workflowCaption=document.getElementById('workflowCaption');
+const workflowCount=document.getElementById('workflowCount');
+const workflowCaptions=['New lead captured · Website form received','n8n webhook triggered · Lead data passed forward','AI qualification complete · Lead context organized','Personalized SMS sent · Customer response received','CRM updated · Team has the latest lead status','Inspection booked · Calendar and CRM synchronized'];
+let workflowIndex=0;
+function showWorkflowStep(index){
+ workflowIndex=(index+workflowNodes.length)%workflowNodes.length;
+ workflowNodes.forEach((node,i)=>node.classList.toggle('active',i===workflowIndex));
+ workflowPanels.forEach((panel,i)=>panel.classList.toggle('show',i===workflowIndex));
+ workflowDots.forEach((dot,i)=>dot.classList.toggle('current',i===workflowIndex));
+ workflowCaption.textContent=workflowCaptions[workflowIndex];
+ workflowCount.textContent=String(workflowIndex+1).padStart(2,'0')+' / 06';
+}
+let workflowTimer=null;
+function stopWorkflowAuto(){if(workflowTimer){clearInterval(workflowTimer);workflowTimer=null;}}
+function startWorkflowAuto(){
+ if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+ stopWorkflowAuto();
+ workflowTimer=setInterval(()=>showWorkflowStep(workflowIndex+1),3600);
+}
+function manualWorkflowStep(index){stopWorkflowAuto();showWorkflowStep(index);}
+document.getElementById('workflowPrev').addEventListener('click',()=>manualWorkflowStep(workflowIndex-1));
+document.getElementById('workflowNext').addEventListener('click',()=>manualWorkflowStep(workflowIndex+1));
+workflowNodes.forEach((node,i)=>{
+ node.addEventListener('click',()=>manualWorkflowStep(i));
+ node.addEventListener('keydown',event=>{
+  if(event.key==='Enter'||event.key===' '){event.preventDefault();manualWorkflowStep(i);}
+ });
+});
+showWorkflowStep(0);
+startWorkflowAuto();
+
+
+</script>
+</body>
+</html>
